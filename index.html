@@ -12,6 +12,7 @@
       font-family: Arial, sans-serif;
     }
 
+    /* SECCIONES */
     .section {
       min-height: 100vh;
       display: flex;
@@ -27,6 +28,7 @@
       font-size: 60px;
       letter-spacing: 5px;
       text-shadow: 0 0 10px white;
+      margin-bottom: 10px;
     }
 
     p {
@@ -34,26 +36,31 @@
       font-size: 18px;
     }
 
+    /* GALERÍA EN COLUMNA */
     .gallery {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      margin-top: 30px;
     }
 
+    /* IMÁGENES GRANDES */
     img {
-      width: 250px;
-      margin: 10px;
+      width: 85vw;
+      max-width: 900px;
+      height: auto;
       border: 2px solid white;
       border-radius: 6px;
       transition: 0.3s;
     }
 
     img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px white;
+      transform: scale(1.02);
+      box-shadow: 0 0 20px white;
     }
 
+    /* BOTÓN */
     button {
       margin-top: 20px;
       padding: 12px 25px;
@@ -62,6 +69,7 @@
       color: white;
       font-size: 18px;
       cursor: pointer;
+      transition: 0.3s;
     }
 
     button:hover {
@@ -88,7 +96,7 @@
     </a>
   </div>
 
-  <!-- GALERÍA -->
+  <!-- IMÁGENES -->
   <div class="section" id="imagenes">
     <h1>Assets del juego</h1>
 
@@ -99,7 +107,6 @@
       <img src="DIVINERUNE.png">
       <img src="DIVINERUNE-1.png">
 
-      <!-- GIFS (IMPORTANTE: con %20 por los espacios) -->
       <img src="dp-gifexport.gif">
       <img src="dp-gifexport%20(1).gif">
       <img src="dp-gifexport%20(2).gif">

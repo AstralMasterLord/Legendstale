@@ -27,7 +27,6 @@
       font-size: 60px;
       letter-spacing: 5px;
       text-shadow: 0 0 10px white;
-      margin-bottom: 10px;
     }
 
     p {
@@ -35,9 +34,16 @@
       font-size: 18px;
     }
 
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
     img {
-      max-width: 300px;
-      margin: 15px;
+      width: 250px;
+      margin: 10px;
       border: 2px solid white;
       border-radius: 6px;
       transition: 0.3s;
@@ -48,24 +54,17 @@
       box-shadow: 0 0 15px white;
     }
 
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .btn {
+    button {
       margin-top: 20px;
       padding: 12px 25px;
       border: 2px solid white;
       background: transparent;
       color: white;
-      cursor: pointer;
       font-size: 18px;
-      transition: 0.3s;
+      cursor: pointer;
     }
 
-    .btn:hover {
+    button:hover {
       background: white;
       color: black;
     }
@@ -85,13 +84,13 @@
     <p><strong>Juego en desarrollo</strong></p>
 
     <a href="#imagenes">
-      <button class="btn">Bajar</button>
+      <button>Bajar</button>
     </a>
   </div>
 
-  <!-- IMÁGENES -->
+  <!-- GALERÍA -->
   <div class="section" id="imagenes">
-    <h1>Sprites / Assets</h1>
+    <h1>Assets del juego</h1>
 
     <div class="gallery">
 
@@ -100,18 +99,19 @@
       <img src="DIVINERUNE.png">
       <img src="DIVINERUNE-1.png">
 
+      <!-- GIFS (IMPORTANTE: con %20 por los espacios) -->
       <img src="dp-gifexport.gif">
-      <img src="dp-gifexport (1).gif">
-      <img src="dp-gifexport (2).gif">
-      <img src="dp-gifexport (3).gif">
+      <img src="dp-gifexport%20(1).gif">
+      <img src="dp-gifexport%20(2).gif">
+      <img src="dp-gifexport%20(3).gif">
 
     </div>
   </div>
 
   <!-- FINAL -->
   <div class="section">
-    <h1>Continuará...</h1>
-    <p>Este proyecto aún está en desarrollo</p>
+    <h1>CONTINUARÁ...</h1>
+    <p>Proyecto en desarrollo</p>
   </div>
 
 </body>
